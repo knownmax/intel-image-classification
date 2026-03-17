@@ -1,0 +1,32 @@
+data_dir: data_dir
+batch_size: 32
+num_workers: 4
+seed: 42
+
+# Phase 1: backbone frozen
+epochs_phase1: 5
+lr_phase1: 1.0e-3
+
+# Phase 2: full fine-tuning
+epochs_phase2: 15
+lr_phase2: 1.0e-4
+
+weight_decay: 1.0e-4
+device: cuda
+
+num_classes: 6
+classes:
+  - buildings
+  - forest
+  - glacier
+  - mountain
+  - sea
+  - street
+
+checkpoint_dir: results
+checkpoint_name: best_model.pth
+
+# Logging: wandb | tensorboard
+logger: wandb
+wandb_project: intel-image-classification
+wandb_entity: null  # set your W&B username/team
