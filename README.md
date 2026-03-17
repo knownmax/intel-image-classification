@@ -56,7 +56,6 @@ EfficientNetV2-S backbone  ← ImageNet weights
 | Parameters     | ~20.3 M  |
 | Training time  | ~45 min (H100) |
 
-> Results will be updated after training.
 
 ---
 
