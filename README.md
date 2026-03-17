@@ -77,10 +77,9 @@ cd intel-image-classification
 # 2. Install dependencies
 pip install -r requirements.txt
 
-# 3. Download the dataset (requires Kaggle API credentials)
+# 3. Download the dataset 
 kaggle datasets download -d puneet6060/intel-image-classification
 unzip intel-image-classification.zip -d data/intel-image-classification
-# Ensure layout: data/intel-image-classification/{train,val,test}/class_name/
 ```
 
 ---
